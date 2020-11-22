@@ -1,5 +1,5 @@
 create table producto(
-       id_producto integer AUTO_INCREMENT primary key,
+       id_producto integer  primary key AUTOINCREMENT,
        nombre varchar(100) not null,
        precio_venta decimal(11,2) not null,
        existencias integer not null,
