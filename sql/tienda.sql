@@ -16,7 +16,7 @@ INSERT INTO producto(nombre, precio_venta, existencias, descripcion) values("Agu
 INSERT INTO producto(nombre, precio_venta, existencias, descripcion) values("Fabuloso", "18", "20","Producto liquido de 1l.");
 
 create table ticket(
-       idventa integer AUTO_INCREMENT primary key ,
+       idventa integer  primary key AUTOINCREMENT,
        tipo_comprobante varchar(20) not null,
        serie_comprobante varchar(7) null,
        num_comprobante varchar (10) not null,
