@@ -22,6 +22,8 @@ create table ticket(
        num_comprobante varchar (10) not null,
        fecha_hora datetime not null,
        total decimal (11,2) not null,
-       estado varchar(20) not null
+       estado varchar(20) not null,
+       id_producto int not null,
+       FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
 );
 
