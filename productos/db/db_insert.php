@@ -6,7 +6,7 @@
 
     $db = new SQLite3('../../tienda.db');
 
-    $db->exec("INSERT INTO personas (nombre,precio_venta,existencias,descripcion) VALUES ('$nombre', '$precio_venta', '$existencias', '$descripcion');");
+    $db->exec("INSERT INTO producto (nombre,precio_venta,existencias,descripcion) VALUES ('$nombre', '$precio_venta', '$existencias', '$descripcion');");
     
     header("Location: ../index.php");
 
